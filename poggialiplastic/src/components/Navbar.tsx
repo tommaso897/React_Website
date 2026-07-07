@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <header className="w-full sticky top-0 z-50 transition-all duration-300">
       {/* Top Contact Banner */}
-      <div className="bg-[#002554] text-zinc-300 text-xs py-2 px-6 sm:px-12 lg:px-24 flex justify-between items-center border-b border-white/10">
+      <div className="hidden md:flex bg-[#002554] text-zinc-300 text-xs py-2 px-6 sm:px-12 lg:px-24 justify-between items-center border-b border-white/10">
         <div className="flex gap-6">
           <a href="tel:+39054587841" className="flex items-center gap-1.5 hover:text-white transition-colors">
             📞 +39 0545 87841
@@ -42,8 +42,11 @@ export default function Navbar() {
             href="https://www.facebook.com/poggialiplastic/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="flex items-center gap-1.5 hover:text-white transition-colors"
           >
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
+            </svg>
             Facebook
           </a>
         </div>

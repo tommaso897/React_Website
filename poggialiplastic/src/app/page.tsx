@@ -62,9 +62,12 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#002554] via-[#0b213b] to-zinc-950 py-24 sm:py-32 px-6 sm:px-12 lg:px-24 text-white flex flex-col justify-center items-center text-center">
-        {/* Decorative subtle gradient radial effect */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(40,164,215,0.15),transparent_45%)]" />
+      <section 
+        className="relative overflow-hidden bg-cover bg-center py-24 sm:py-32 px-6 sm:px-12 lg:px-24 text-white flex flex-col justify-center items-center text-center"
+        style={{ backgroundImage: "url('/images/pallini-1200x1000.jpg')" }}
+      >
+        {/* Dark overlay for text readability and brand gradient integration */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#002554]/85 via-[#0b213b]/90 to-zinc-950/95" />
         
         <div className="relative max-w-4xl mx-auto space-y-8">
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-[#28a4d7]/10 text-[#28a4d7] border border-[#28a4d7]/20 uppercase tracking-widest">
