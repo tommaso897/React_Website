@@ -1,4 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Contributi Pubblici",
+  description: "Trasparenza amministrativa sui contributi pubblici ricevuti da Poggiali Plastic Creations S.r.l. per progetti europei, SICAM e post-Covid.",
+  openGraph: {
+    title: "Contributi Pubblici | Poggiali Plastic Creations",
+    description: "Trasparenza amministrativa sui contributi pubblici ricevuti da Poggiali Plastic Creations S.r.l. per progetti europei, SICAM e post-Covid.",
+  },
+};
 
 export default function ContributiPage() {
   const contributi = [

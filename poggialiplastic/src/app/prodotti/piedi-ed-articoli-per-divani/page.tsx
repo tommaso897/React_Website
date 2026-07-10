@@ -1,3 +1,14 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Piedi e Articoli per Divani",
+  description: "Specialisti nella produzione e stampaggio di piedini in plastica e supporti per divani, poltrone e mobili imbottiti.",
+  openGraph: {
+    title: "Piedi e Articoli per Divani | Poggiali Plastic Creations",
+    description: "Specialisti nella produzione e stampaggio di piedini in plastica e supporti per divani, poltrone e mobili imbottiti.",
+  },
+};
+
 export default function PiediDivaniPage() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-zinc-950 py-16 px-6 sm:px-12 lg:px-24">

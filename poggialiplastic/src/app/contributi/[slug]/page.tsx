@@ -1,5 +1,36 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  
+  if (slug === "7-poggiali-plastic-creations-alla-sicam-2023-una-importante-occasione-per-l-espansione-nel-mercato-europeo") {
+    return {
+      title: "SICAM 2023: Espansione Mercato Europeo",
+      description: "La nostra partecipazione al SICAM 2023 di Pordenone con l'obiettivo di consolidare ed espandere i rapporti commerciali nell'Unione Europea, con focus specifico sulla Germania.",
+      openGraph: {
+        title: "SICAM 2023: Espansione Mercato Europeo | Poggiali Plastic Creations",
+        description: "La nostra partecipazione al SICAM 2023 di Pordenone con l'obiettivo di consolidare ed espandere i rapporti commerciali nell'Unione Europea, con focus specifico sulla Germania.",
+      }
+    };
+  }
+  
+  if (slug === "6-poggiali-plastic-progetto-di-espansione-commerciale-all-estero-per-la-ripresa-post-covid-nel-2022") {
+    return {
+      title: "Progetto Espansione Commerciale Estero 2022",
+      description: "Sviluppo commerciale all'estero tramite la fiera SICAM 2022, per promuovere il marchio aziendale a livello internazionale e avviare nuove collaborazioni commerciali post-pandemia.",
+      openGraph: {
+        title: "Progetto Espansione Commerciale Estero 2022 | Poggiali Plastic Creations",
+        description: "Sviluppo commerciale all'estero tramite la fiera SICAM 2022, per promuovere il marchio aziendale a livello internazionale e avviare nuove collaborazioni commerciali post-pandemia.",
+      }
+    };
+  }
+  
+  return {
+    title: "Dettaglio Contributo",
+  };
+}
 
 export async function generateStaticParams() {
   return [
@@ -71,9 +102,12 @@ export default async function ContributoDetailPage({ params }: PageProps) {
                 href="/images/poster-1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#28a4d7] hover:bg-[#28a4d7]/90 text-white font-semibold text-xs py-3.5 px-6 rounded-xl transition-all text-center shadow-sm"
+                className="w-full sm:w-auto bg-[#28a4d7] hover:bg-[#28a4d7]/90 text-white font-semibold text-xs py-3.5 px-6 rounded-xl transition-all text-center shadow-sm inline-flex items-center justify-center gap-2"
               >
-                📥 Scarica il Poster (PDF)
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Scarica il Poster (PDF)
               </a>
             </div>
 
@@ -153,8 +187,12 @@ export default async function ContributoDetailPage({ params }: PageProps) {
             </div>
 
             {/* Funding statement */}
-            <div className="p-4 bg-[#28a4d7]/5 border border-[#28a4d7]/15 rounded-xl text-center text-xs sm:text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-              🇪🇺 Progetto cofinanziato dal Fondo europeo di sviluppo regionale (FESR)
+            <div className="p-4 bg-[#28a4d7]/5 border border-[#28a4d7]/15 rounded-xl flex items-center justify-center gap-3 text-xs sm:text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+              <svg className="w-6 h-4 shrink-0 rounded-[2px]" viewBox="0 0 12 8">
+                <rect width="12" height="8" fill="#003399"/>
+                <circle cx="6" cy="4" r="2.4" fill="none" stroke="#FFCC00" strokeWidth="0.4" strokeDasharray="0.01 0.62" strokeLinecap="round" />
+              </svg>
+              <span>Progetto cofinanziato dal Fondo europeo di sviluppo regionale (FESR)</span>
             </div>
 
             {/* Poster CTA Block */}
@@ -171,9 +209,12 @@ export default async function ContributoDetailPage({ params }: PageProps) {
                 href="/images/poster.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-[#28a4d7] hover:bg-[#28a4d7]/90 text-white font-semibold text-xs py-3.5 px-6 rounded-xl transition-all text-center shadow-sm"
+                className="w-full sm:w-auto bg-[#28a4d7] hover:bg-[#28a4d7]/90 text-white font-semibold text-xs py-3.5 px-6 rounded-xl transition-all text-center shadow-sm inline-flex items-center justify-center gap-2"
               >
-                📥 Scarica il Poster (PDF)
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Scarica il Poster (PDF)
               </a>
             </div>
 

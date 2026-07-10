@@ -56,7 +56,10 @@ export default function CookieBanner() {
         {/* Banner Header */}
         <div>
           <h4 className="text-base font-bold text-white flex items-center gap-2">
-            🍪 Gestione del Consenso Cookie
+            <svg className="w-5 h-5 text-[#28a4d7] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+            Gestione del Consenso Cookie
           </h4>
           <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
             Utilizziamo cookie tecnici per far funzionare il sito. Previo tuo consenso, vorremmo usare anche cookie analitici e di marketing per migliorare l'esperienza e offrirti contenuti personalizzati. Puoi decidere quali abilitare.

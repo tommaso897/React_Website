@@ -1,4 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Servizi di Stampaggio",
+  description: "I nostri servizi: dallo stampaggio ad iniezione di materie plastiche alla prototipazione 3D rapida, costruzione stampi e assemblaggio.",
+  openGraph: {
+    title: "Servizi di Stampaggio | Poggiali Plastic Creations",
+    description: "I nostri servizi: dallo stampaggio ad iniezione di materie plastiche alla prototipazione 3D rapida, costruzione stampi e assemblaggio.",
+  },
+};
 
 export default function ServiziPage() {
   const services = [

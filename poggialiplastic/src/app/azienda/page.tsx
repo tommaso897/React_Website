@@ -1,5 +1,15 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Azienda",
+  description: "La nostra storia dal 1961: oltre 60 anni di esperienza nello stampaggio a iniezione di materie plastiche e tecnopolimeri a Massa Lombarda.",
+  openGraph: {
+    title: "Azienda | Poggiali Plastic Creations",
+    description: "La nostra storia dal 1961: oltre 60 anni di esperienza nello stampaggio a iniezione di materie plastiche e tecnopolimeri a Massa Lombarda.",
+  },
+};
 
 export default function AziendaPage() {
   const stats = [
@@ -154,8 +164,11 @@ export default function AziendaPage() {
       {/* Partnerships / Stampaggio Section */}
       <section className="py-20 px-6 sm:px-12 lg:px-24 bg-white dark:bg-zinc-900 border-t border-zinc-200/50 dark:border-zinc-800/50">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="w-16 h-16 bg-[#28a4d7]/10 rounded-2xl flex items-center justify-center text-3xl mx-auto">
-            🛠️
+          <div className="w-16 h-16 bg-[#28a4d7]/10 rounded-2xl flex items-center justify-center mx-auto">
+            <svg className="w-8 h-8 text-[#28a4d7]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A1.5 1.5 0 1019.38 18.87l-5.83-5.83M11.42 15.17a3 3 0 11-4.24-4.24 3 3 0 014.24 4.24Z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M18.42 6.83L12.58 11M18.42 6.83a3 3 0 10-4.24-4.24 3 3 0 004.24 4.24ZM12.58 11l-5.83-5.83M12.58 11a3 3 0 11-4.24 4.24 3 3 0 014.24-4.24Z" />
+            </svg>
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-zinc-50 tracking-tight">

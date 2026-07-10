@@ -1,4 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Informativa sui Cookie (Cookie Policy)",
+  description: "Informativa estesa sull'uso dei cookie e degli altri strumenti di tracciamento sul sito di Poggiali Plastic Creations S.r.l.",
+  robots: {
+    index: false, // Normal practice is to keep policy pages unindexed if preferred, or indexed but low priority
+    follow: true,
+  },
+};
 
 export default function CookieLawPage() {
   return (

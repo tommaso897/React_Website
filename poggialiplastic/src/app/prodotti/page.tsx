@@ -1,3 +1,14 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Prodotti in Plastica",
+  description: "Esplora la nostra produzione di articoli in plastica stampati ad iniezione: piedini per divani, tappi per tubi e soluzioni industriali personalizzate.",
+  openGraph: {
+    title: "Prodotti in Plastica | Poggiali Plastic Creations",
+    description: "Esplora la nostra produzione di articoli in plastica stampati ad iniezione: piedini per divani, tappi per tubi e soluzioni industriali personalizzate.",
+  },
+};
+
 export default function ProdottiPage() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-zinc-950 py-16 px-6 sm:px-12 lg:px-24">
